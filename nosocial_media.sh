@@ -13,7 +13,6 @@ social_media=(
   www.reddit.com
 )
 
-
 if [[ $1 == "block" ]]; then
 	for i in "${social_media[@]}"; do
 		sed -i "/^127.0.0.1 $i/d" /c/Windows/System32/drivers/etc/hosts
@@ -21,9 +20,9 @@ if [[ $1 == "block" ]]; then
 	done
 fi
 
+
 if [[ $1 == "unblock" ]]; then
 	for i in "${social_media[@]}"; do
 		sed -i "/^127.0.0.1 $i/d" /c/Windows/System32/drivers/etc/hosts
 	done
 fi
-
