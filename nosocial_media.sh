@@ -32,13 +32,10 @@ unblocks() {
 
 case "$1" in
     block)
-        blocks
-        ;;
+        blocks ;;
     unblock)
-        unblocks
-        ;;
+        unblocks ;;
     *)
         echo "Usage: $0 block | unblock"
-        exit 1
-        ;;
+        exit 1 ;;
 esac
